@@ -1,0 +1,107 @@
+/* Body Styles */  
+body {  
+    font-family: 'Helvetica Neue', Arial, sans-serif;  
+    background: linear-gradient(to right, #ece9e6, #ffffff);  
+    color: #333;  
+}  
+
+/* Header Styles */  
+header {  
+    background-color: #4A4A4A;  
+    background-image: linear-gradient(to bottom, #4A4A4A, #2E2E2E);  
+    color: #fff;  
+    padding: 20px;  
+    text-align: center;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);  
+}  
+
+/* Main Styles */  
+main {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    padding: 40px;  
+}  
+
+/* Form Box Styles */  
+#login-box, #signup-box {  
+    background-color: #fff;  
+    border: none;  
+    padding: 30px;  
+    width: 350px;  
+    margin: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+    display: none; /* Initially hidden */  
+    transition: transform 0.3s ease;  
+}  
+
+/* Button Styles */  
+button {  
+    background-color: #4CAF50;  
+    background-image: linear-gradient(to bottom, #5cb85c, #4CAF50);  
+    color: white;  
+    padding: 12px 25px;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    font-size: 16px;  
+    margin: 10px;  
+    text-transform: uppercase;  
+    letter-spacing: 0.5px;  
+    transition: background 0.3s, transform 0.3s;  
+}  
+
+button:hover {  
+    background-color: #45a049;  
+    transform: translateY(-2px);  
+}  
+
+/* Form Heading Styles */  
+#login-box h2, #signup-box h2 {  
+    color: #333;  
+    font-weight: 600;  
+    margin-bottom: 20px;  
+    font-size: 1.5rem;  
+    position: relative;  
+    border-bottom: 2px solid #4CAF50;  
+    padding-bottom: 5px;  
+}  
+
+/* Input Field Styles */  
+#login-box input, #signup-box input {  
+    width: 100%;  
+    padding: 12px;  
+    margin-bottom: 20px;  
+    border: 2px solid #ddd;  
+    border-radius: 5px;  
+    font-size: 16px;  
+    transition: border-color 0.3s;  
+}  
+
+#login-box input:focus, #signup-box input:focus {  
+    border-color: #4CAF50;  
+    outline: none;  
+}  
+
+/* Link Styles */  
+#login-box a, #signup-box a {  
+    text-decoration: none;  
+    color: #4CAF50;  
+    font-weight: bold;  
+}  
+
+#login-box a:hover, #signup-box a:hover {  
+    color: #3e8e41;  
+    text-decoration: underline;  
+}  
+
+/* Responsive Design */  
+@media (max-width: 500px) {  
+    #login-box, #signup-box {  
+        width: 90%;  
+    }  
+    #login-btn, #signup-btn, #login-submit, #signup-submit {  
+        width: 100%;  
+    }  
+}
